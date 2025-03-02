@@ -1,0 +1,151 @@
+$font : Afacad Flux;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.read-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    // background-color: aqua;
+    .read-sub{
+        width: 30rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        place-content: center;
+        h1{
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        table{
+            width: 25rem; 
+            place-self: center;
+            tbody{
+                tr{
+                    margin: 2rem 0;
+                    border-radius: .2rem;
+                    td{
+                        padding: 0.2rem;
+                        font-weight: 600;
+                        width: 50%;
+                        button{
+                            border: none;
+                            outline: none;
+                            background-color: rgba(0, 0, 0, 0.749);
+                            text-align: center;
+                            padding-top: .5rem;
+                            padding-bottom: .2rem;
+                            width: 1.5rem;
+                            font-size: 1rem;
+                            border-radius: 2rem;
+                            cursor: pointer;
+                            .delete-icon{
+                                color: red;
+                            }
+                            .edit-icon{
+                                color: rgb(39, 218, 101);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            border: none;
+            outline: none;
+            width: 7rem;
+            background-color: rgb(224, 152, 16);
+            padding: .5rem 0;
+            border-radius: 1rem;
+            margin-top: .5rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .read-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        
+        .read-sub{
+            width: 17rem;
+            padding: 2rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            place-content: center;
+            h1{
+                font-weight: 800;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+            table{
+                width: 10rem; 
+                place-self: center;
+                tbody{
+                    tr{
+                        margin: 2rem 0;
+                        border-radius: .2rem;
+                        font-size: .6rem;
+                        td{
+                            padding: 0.2rem;
+                            font-weight: 600;
+                            width: 50%;
+                            button{
+                                border: none;
+                                outline: none;
+                                background-color: rgba(0, 0, 0, 0.749);
+                                text-align: center;
+                                padding-top: .5rem;
+                                padding-bottom: .2rem;
+                                width: 1.5rem;
+                                font-size: .7rem;
+                                border-radius: 2rem;
+                                cursor: pointer;
+                                .delete-icon{
+                                    color: red;
+                                }
+                                .edit-icon{
+                                    color: rgb(39, 218, 101);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            button{
+                border: none;
+                outline: none;
+                width: 6rem;
+                background-color: rgb(224, 152, 16);
+                padding: .5rem 0;
+                border-radius: 1rem;
+                margin-top: .5rem;
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+    }
+    .toast{
+        width: 17rem;
+        margin-left: 4rem;
+        margin-top: 5rem;
+    }
+}
